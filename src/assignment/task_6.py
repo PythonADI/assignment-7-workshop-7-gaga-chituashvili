@@ -3,3 +3,10 @@ Write a function called describe_person that takes any number of keyword argumen
 
 Test describe_person with different sets of keyword arguments (e.g., name="Alice", age=30, city="New York").
 """
+
+
+def describe_person(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+describe_person(name="Alice", age=30, city="New York")

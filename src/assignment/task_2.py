@@ -4,3 +4,17 @@ Write a function called outer_function that defines a local variable message = "
 - What happens if you use the nonlocal keyword with message inside inner_function?
 - Can inner_function modify message without nonlocal?
 """
+
+
+
+def outer_function():
+    message = "Hello"
+    
+    def inner_function():
+        print( message)
+        message = "Hello, World!"
+    
+    inner_function()
+    print(message)
+
+outer_function()

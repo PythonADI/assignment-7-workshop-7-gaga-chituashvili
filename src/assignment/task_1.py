@@ -4,3 +4,17 @@ Create a function called `increase_counter` that increases a `counter` variable 
 - What happens when you try to update counter inside the function without using global?
 - Now, try declaring counter as global inside the function and observe the results.
 """
+
+
+COUNTER = 0
+
+def counter():
+    global COUNTER
+    COUNTER += 1
+
+
+counter()
+counter()
+counter()
+
+print(COUNTER)
