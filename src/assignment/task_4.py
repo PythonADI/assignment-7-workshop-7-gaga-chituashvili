@@ -3,3 +3,10 @@ Write a function called greet that takes two parameters: name and greeting. Set 
 
 - Test the function by calling it with only the name argument and then by calling it with both name and greeting arguments.
 """
+
+
+def greet(name, greeting="Hello"):
+    print(f"{greeting} {name}")
+
+greet("Joe")  
+greet("Alice") 
